@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFL Pick'em 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Use a modern sans-serif font for a clean look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Centered football logo overlay.  Placed at top of body so it remains behind other content due to DOM order. -->
+  <img id="center-logo" src="icons/football.svg" alt="Football logo" />
+
+  <header>
+    <h1>NFL Pick'em&nbsp;2025</h1>
+    <!-- Update tagline to fit the requested phrase -->
+    <p>May The Odds Be Forever In Your Favor</p>
+    <!-- Notice about pick-change deadline -->
+    <div id="kickoff-notice">Selections May Be Changed 30 Minutes Prior to Kickoff</div>
+  </header>
+
+  <main>
+    <!-- User selection -->
+    <section id="user-selection" class="card">
+      <h2>Select User</h2>
+      <select id="user-select">
+        <!-- Options inserted dynamically -->
+      </select>
+    </section>
+
+    <!-- Week navigation -->
+    <nav id="week-nav" class="week-nav">
+      <!-- Week buttons will be generated here -->
+    </nav>
+
+    <!-- Schedule container -->
+    <section id="schedule-container">
+      <!-- Games for the selected week will appear here -->
+    </section>
+
+    <!-- Scoreboard section -->
+    <section id="scoreboard" class="card">
+      <h2>Scoreboard</h2>
+      <div id="scoreboard-content">
+        <!-- Scoreboard table will be generated here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 NFL Fantasy Weekly Team. Built For Family Rivalries Only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
